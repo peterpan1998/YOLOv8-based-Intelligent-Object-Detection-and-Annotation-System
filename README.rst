@@ -8,14 +8,6 @@ YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System
 .. image:: https://img.shields.io/travis/tzutalin/labelImg.svg
         :target: https://travis-ci.org/tzutalin/labelImg
 
-.. image:: https://img.shields.io/badge/lang-en-blue.svg
-        :target: https://github.com/tzutalin/labelImg/blob/master/README.zh.rst
-
-.. image:: https://img.shields.io/badge/lang-zh-green.svg
-        :target: https://github.com/tzutalin/labelImg/blob/master/readme/README.zh.rst
-
-.. image:: https://img.shields.io/badge/lang-zh--TW-green.svg
-    :target: (https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.pt-br.md
 
 The project is based on YOLOv8 and features automatic annotation, dataset splitting, and conversion functions. Users can easily convert COCO datasets to VOC or YOLO format with just one click, as well as perform model inference and training. Additionally, the system provides annotation and modification capabilities for both VOC and YOLO formatted datasets.
 by `ImageNet <http://www.image-net.org/>`__.  Besides, it also supports YOLO and CreateML formats.
