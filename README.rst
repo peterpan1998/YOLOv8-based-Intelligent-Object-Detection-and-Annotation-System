@@ -37,7 +37,8 @@ Before using this software, please ensure that you have installed the Python SDK
     pip3 install labelImg
     
 
-
+Windows
+^^^^^^^
 Build from source
 ~~~~~~~~~~~~~~~~~
 
