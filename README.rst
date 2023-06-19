@@ -48,6 +48,33 @@ Note: The code provided is written for the Windows environment, and theoreticall
 Usage
 -----
 
+
+Steps (Auto label)
+~~~~~~~~~~~~~~~~~
+
+1. Click 'v8-detect' 
+2. Click 'v8 auto label'
+
+
+
+
+.. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/v8-annotations.png
+
+
+Note: 
+        "select weight file"  is the option to choose the corresponding inference weight file.
+        "select img    path"  is the folder where you store the images to be automatically annotated, 
+        "select xml    path"  is the folder where the automatically generated XML files will be saved.
+        
+After selecting all the mentioned files, you can click the "START DETECTION" button to initiate the automatic annotation process.
+
+
+1. Click 'Open Dir'
+2. Click 'Change save dir'
+
+"Open Dir" is the option to select the folder containing the images you want to annotate, while "Change Save Dir" is used to choose the folder where you want to save the generated XML.
+After the automatic annotation is completed, you can go back to the main interface to view the annotation results. You can then make any necessary modifications according to your annotation requirements.
+
 Steps (PascalVOC)
 ~~~~~~~~~~~~~~~~~
 
