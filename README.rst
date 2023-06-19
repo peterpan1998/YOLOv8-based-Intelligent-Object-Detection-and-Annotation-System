@@ -28,6 +28,7 @@ Get from PyPI but only python3.0 or above
 Before using this software, please ensure that you have installed the Python SDK. Whether you have directly installed the Python SDK or are using tools like Anaconda, please activate the corresponding environment before proceeding with the following steps.
 
 .. code:: shell
+
     pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
     pip3 install ultralytics
     pip3 install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -37,8 +38,7 @@ Before using this software, please ensure that you have installed the Python SDK
     pip3 install labelImg
     
 
-Windows
-^^^^^^^
+
 Build from source
 ~~~~~~~~~~~~~~~~~
 
