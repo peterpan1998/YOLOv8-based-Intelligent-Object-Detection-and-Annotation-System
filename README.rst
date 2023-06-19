@@ -75,6 +75,22 @@ After selecting all the mentioned files, you can click the "START DETECTION" but
 "Open Dir" is the option to select the folder containing the images you want to annotate, while "Change Save Dir" is used to choose the folder where you want to save the generated XML.
 After the automatic annotation is completed, you can go back to the main interface to view the annotation results. You can then make any necessary modifications according to your annotation requirements.
 
+
+Steps (Auto Train)
+~~~~~~~~~~~~~~~~~
+
+Please ensure that your dataset is prepared before proceeding with the training. Here are the two basic steps to prepare the dataset:
+
+1. Click 'Open Dir'
+2. Click 'Change save dir'
+
+
+
+
+
+
+todo。。。。。。。。。。。。。。。。。。。
+
 Steps (PascalVOC)
 ~~~~~~~~~~~~~~~~~
 
