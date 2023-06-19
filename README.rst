@@ -23,7 +23,7 @@ by `ImageNet <http://www.image-net.org/>`__.  Besides, it also supports YOLO and
 .. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/demo3.jpg
      :alt: Demo Image
 
-.. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/demo.jpg
+.. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/demo4.jpg
      :alt: Demo Image
 
 `Watch a demo video <https://youtu.be/p0nR2YsCY_U>`__
