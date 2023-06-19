@@ -1,4 +1,5 @@
-LabelImg
+
+YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System
 ========
 
 .. image:: https://img.shields.io/pypi/v/labelimg.svg
