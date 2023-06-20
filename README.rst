@@ -95,6 +95,10 @@ It is recommended to organize the folder structure as follows:
 |  |   |--./data/images/002.jpg
 |  |   |--...
 
+
+Build from source
+~~~~~~~~~~~~~~~~~
+
 Please ensure that your dataset is prepared before proceeding with the training. Here are the two basic steps to prepare the dataset:
 
 1. Click 'Open Dir'
