@@ -68,16 +68,32 @@ Note:
         
 After selecting all the mentioned files, you can click the "START DETECTION" button to initiate the automatic annotation process.
 
+After the automatic annotation is completed, you can return to the main interface to perform the following two operations and review the results of the automatic annotation:
+By reviewing and modifying the annotations, you can ensure that they meet your specific requirements and achieve the desired level of accuracy.
 
 1. Click 'Open Dir'
 2. Click 'Change save dir'
 
-"Open Dir" is the option to select the folder containing the images you want to annotate, while "Change Save Dir" is used to choose the folder where you want to save the generated XML.
-After the automatic annotation is completed, you can go back to the main interface to view the annotation results. You can then make any necessary modifications according to your annotation requirements.
+"Open Dir" is the option to select the folder containing the images you want to annotate.
+"Change Save Dir" is the folder where XML files are saved.
+
 
 
 Steps (Auto Train)
 ~~~~~~~~~~~~~~~~~
+It is recommended to organize the folder structure as follows:
+
+.. code:: shell
+
+|--./data
+|  |--./data/Annotations
+|  |   |--./data/Annotations/001.xml
+|  |   |--./data/Annotations/002.xml
+|  |   |--...
+|  |--./data/images
+|  |   |--./data/images/001.jpg
+|  |   |--./data/images/002.jpg
+|  |   |--...
 
 Please ensure that your dataset is prepared before proceeding with the training. Here are the two basic steps to prepare the dataset:
 
