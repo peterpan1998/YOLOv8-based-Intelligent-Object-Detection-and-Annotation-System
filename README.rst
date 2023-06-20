@@ -85,15 +85,15 @@ It is recommended to organize the folder structure as follows:
 
 .. code:: shell
 
-|--./data
-|  |--./data/Annotations
-|  |   |--./data/Annotations/001.xml
-|  |   |--./data/Annotations/002.xml
-|  |   |--...
-|  |--./data/images
-|  |   |--./data/images/001.jpg
-|  |   |--./data/images/002.jpg
-|  |   |--...
+        |--./data
+        |  |--./data/Annotations
+        |  |   |--./data/Annotations/001.xml
+        |  |   |--./data/Annotations/002.xml
+        |  |   |--...
+        |  |--./data/images
+        |  |   |--./data/images/001.jpg
+        |  |   |--./data/images/002.jpg
+        |  |   |--...
 
 .. code:: shell
 
