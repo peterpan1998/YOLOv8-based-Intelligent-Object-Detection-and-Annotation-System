@@ -100,13 +100,27 @@ Please ensure that your dataset is prepared before proceeding with the training.
 
 1. Click 'Open Dir'
 2. Click 'Change save dir'
+3. Click 'v8-detect'
+4. Click '1 split dataset'
+5. Click '2 xml to txt'
+6. Click '3 create yaml'
+7. Click '4 start train'
+
+.. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/createyaml.png
+.. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/starttrain.png
+
+Customize the parameter settings according to your specific requirements.
+After clicking "Start," you can view the training process in the command line interface. Once the training is completed, you can find the final results in your project directory.
 
 
+Steps (coco to voc)
+~~~~~~~~~~~~~~~~~~~
+1. Click 'v8-detect'
+2. Click '5 coco to voc'
 
+.. image:: https://github.com/peterpan1998/YOLOv8-based-Intelligent-Object-Detection-and-Annotation-System/blob/master/demo/cocotovoc.png
 
-
-
-todo。。。。。。。。。。。。。。。。。。。
+In the "VOC" section, you should place the images and XML files converted from the COCO format. For "COCO Images," select the folder containing the image files. The "name.json" file corresponds to the JSON annotation file for the COCO images.
 
 Steps (PascalVOC)
 ~~~~~~~~~~~~~~~~~
