@@ -95,19 +95,6 @@ It is recommended to organize the folder structure as follows:
         |  |   |--./data/images/002.jpg
         |  |   |--...
 
-.. code:: shell
-
-    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
-    pip3 install ultralytics
-    pip3 install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip3 install PyQt5 -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip3 install PyQt5_tools -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip3 install pycocotools
-    pip3 install labelImg
-    
-
-
-
 
 Please ensure that your dataset is prepared before proceeding with the training. Here are the two basic steps to prepare the dataset:
 
