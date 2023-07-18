@@ -19,6 +19,7 @@ from libs.alertText import AlertText
 from libs.c2v import Co2voc
 from libs.coco2voc import Coco2voc
 from libs.v8train import YOLOv8
+from libs.xml2txt import Xml2TXT
 
 try:
     from PyQt5.QtGui import *
@@ -325,7 +326,7 @@ class MainWindow(QMainWindow, WindowMixin):
 
         v8AutoDetect = action('V8 Auto label', self.v8AutoDetectClick, None, 'new')
         splitDataset = action('1 split dataset', self.splitDatasetClick, None, 'hide')
-        xmlToTxt = action('2 xml to txt', self.xmlToTxtClick, None, 'new')
+        xmlToTxt = action('2 xml to txt', self.xmlToTxtClick2, None, 'new')
         createyaml = action('3 create yaml', self.createYamlClick, None, 'new')
         starttrain = action('4 start train', self.starttrainClick, None, 'new')
         coco2voc = action('5 coco to voc', self.coco2vocClick, None, 'new')
@@ -594,8 +595,16 @@ class MainWindow(QMainWindow, WindowMixin):
     #xml文件转换成txt文件的开始
     # 进行归一化操作
     def convert(self,size, box):  # size:(原图w,原图h) , box:(xmin,xmax,ymin,ymax)
-        dw = 1. / size[0]  # 1/w
-        dh = 1. / size[1]  # 1/h
+        if size[0] == 0.:
+            dw = 1.0/ 1.0  # 1/w
+        else:
+
+            dw = 1.0 / size[0]  # 1/w
+        if size[1] == 0.:
+            dh = 1.0/ 1.  # 1/h
+        else:
+
+            dh = 1.0/ size[1]  # 1/h
         x = (box[0] + box[1]) / 2.0  # 物体在图中的中心点x坐标
         y = (box[2] + box[3]) / 2.0  # 物体在图中的中心点y坐标
         w = box[1] - box[0]  # 物体实际像素宽度
@@ -607,7 +616,8 @@ class MainWindow(QMainWindow, WindowMixin):
         return (x, y, w, h)
     # year ='2012', 对应图片的id（文件名）
     def convert_annotation(self,image_id):
-        classes = ['1', '2', '3', '4']
+        # classes = ['1', '2', '3', '4']
+        classes = ['person']
         # 对应的通过year 找到相应的文件夹，并且打开相应image_id的xml文件，其对应bund文件
         in_file = open(self.default_save_dir+'/%s.xml' % (image_id), encoding='utf-8')
         # 准备在对应的image_id 中写入对应的label，分别为
@@ -695,7 +705,15 @@ class MainWindow(QMainWindow, WindowMixin):
             alertText = QMessageBox()
             alertText.warning(self, title, info)
     #xml文件转换成txt文件的结束
-
+    def  xmlToTxtClick2(self):
+        if self.flag == 1:
+            alertTxt = Xml2TXT(self.default_save_dir,self.flag,self.last_open_dir)
+            alertTxt.exec_()
+        else:
+            title = 'Alert  Text         '
+            info = "       please split dataset  !             "
+            alertText = QMessageBox()
+            alertText.warning(self, title, info)
     def  createYamlClick(self):
         print(self.file_path)
         print(self.last_open_dir,'=============')
