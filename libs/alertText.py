@@ -9,12 +9,14 @@ from PyQt5.QtWidgets import QDialog, QPushButton, QApplication, QVBoxLayout, QGr
 class AlertText(QDialog):
     def __init__(self,sourcepath):
         super().__init__()
-        print("我是弹出条件窗口")
-        if sourcepath == None:
-            self.sourcepath = r'D:\document\python_project\project1\python_tools\data/'
-
-        else:
-            self.sourcepath = sourcepath.replace('/Annotations','/')
+        listl = []
+        if '/' in sourcepath:
+            listl = sourcepath.split('/')
+        if '\\' in sourcepath:
+            listl = sourcepath.split('\\')
+        listl.pop()
+        str1 = '/'
+        self.sourcepath = str1.join(listl)+'/'
         print(self.sourcepath)
         self.init_ui()
         self.train_path = ''
