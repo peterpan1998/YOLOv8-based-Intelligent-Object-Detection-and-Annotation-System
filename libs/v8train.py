@@ -25,7 +25,15 @@ class YOLOv8(QDialog):
             self.sourcepath = r'D:/'
 
         else:
-            self.sourcepath = sourcepath.replace('/Annotations','/')
+            listl = []
+            if '/' in sourcepath:
+                listl = sourcepath.split('/')
+            if '\\' in sourcepath:
+                listl = sourcepath.split('\\')
+            listl.pop()
+            str1 = '/'
+            self.sourcepath = str1.join(listl)+'/'
+
         print(self.sourcepath)
         self.init_ui()
     def init_ui(self):
