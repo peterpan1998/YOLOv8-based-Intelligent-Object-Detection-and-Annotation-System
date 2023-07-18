@@ -121,6 +121,8 @@ class AlertText(QDialog):
                 print(namelist)
             if ',' in namesstr:
                 namelist = namesstr.split(',')
+            else:
+                namelist = "['"+namesstr+"']"
             print(namelist,'********')
             yamlname = self.sourcepath+self.edit7.text()
             if '.yaml' in yamlname:
