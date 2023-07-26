@@ -13,7 +13,7 @@ quan_ju_img_path = ''
 class Child(QDialog):
     def __init__(self):
         super().__init__()
-        print("子窗口")
+        
         self.init_ui()
         self.weight_path = '' # 模型路径
         self.imgdir = ''  # 图片路径
@@ -72,7 +72,7 @@ class Child(QDialog):
         self.btn5.clicked.connect(self.btn5_clicked) #选择图片路径按钮的点击事件
         self.btn6.clicked.connect(self.btn6_clicked) #选择xml文件的保存路径
     def btn1_clicked(self):
-        # print("a 我被点了！")
+        
         if self.weight_path == '' :
             self.progressDialog1 = QProgressDialog('请选择权重文件路径！', '取消', 0, 0, self)
             self.progressDialog1.setWindowTitle('警告窗口')
@@ -95,7 +95,7 @@ class Child(QDialog):
             self.Auto_label(self.weight_path, self.imgdir, self.xmldir)
 
     def btn4_clicked(self):
-        # directory = QtWidgets.QFileDialog.getExistingDirectory(None, "选取文件夹","D:/document/python_project/project1/python_tools/data/")  # 起始路径
+        
         filename, filetype = QtWidgets.QFileDialog.getOpenFileName(self, "选取Excel文件", "D:/document/python_project/project1/python_tools/data/"," (*.* *.*)")
         print(filename)
         self.edit.setText(filename)
