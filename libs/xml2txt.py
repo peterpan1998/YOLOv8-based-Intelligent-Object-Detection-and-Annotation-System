@@ -1,6 +1,5 @@
 from PyQt5 import QtWidgets
 import  os
-from libs.jindu import *
 from PyQt5.QtCore import QThread, QCoreApplication
 from PyQt5.QtWidgets import QDialog, QPushButton, QApplication, QVBoxLayout, QGroupBox, QRadioButton, QHBoxLayout, \
     QLineEdit, QWidget, QProgressDialog, QMessageBox
