@@ -82,7 +82,7 @@ class Xml2TXT(QDialog):
         classes = []
         if ',' in str1:
             classes = str1.split(',')
-        if '，' in str1:
+        elif '，' in str1:
             classes = str1.split('，')
         else:
             classes.append(str1)
