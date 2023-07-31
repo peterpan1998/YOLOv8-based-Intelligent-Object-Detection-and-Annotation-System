@@ -121,7 +121,7 @@ class AlertText(QDialog):
             if '，' in namesstr:
                 namelist = namesstr.split('，')
                 print(namelist)
-            if ',' in namesstr:
+            elif ',' in namesstr:
                 namelist = namesstr.split(',')
             else:
                 namelist = "['"+namesstr+"']"
@@ -139,7 +139,7 @@ class AlertText(QDialog):
                 self.reset()
             else:
                 title = 'Alert  Text         '
-                info = "       请填写正确的文件名 !             "
+                info = "       请填写正确的文件后缀名 !             "
                 alertText = QMessageBox()
                 alertText.warning(self, title, info)
 
